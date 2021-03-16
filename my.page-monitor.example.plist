@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>my.page-monitor.example</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/fdautil</string>
+		<string>exec</string>
+		<string>/Users/me/Code/page-monitor/example.sh</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Users/me/Code/page-monitor/logs/example-error.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/me/Code/page-monitor/logs/example-output.log</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>10</integer>
+			<key>Weekday</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>10</integer>
+			<key>Weekday</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>10</integer>
+			<key>Weekday</key>
+			<integer>5</integer>
+		</dict>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/me/Code/page-monitor</string>
+</dict>
+</plist>
