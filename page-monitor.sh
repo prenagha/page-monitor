@@ -33,6 +33,7 @@ diff --ignore-case --ignore-space-change --ignore-all-space \
 if [ $? -eq 0 ]
 then
   echo "${DT} No changes $TAG"
+  rm "$TMP_FILE"
 else
   echo "${DT} Changes found $TAG"
   mv "$TMP_FILE" "$CACHE_FILE"
